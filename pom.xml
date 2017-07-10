@@ -8,6 +8,7 @@
     <modules>
         <module>guava</module>
         <module>java8</module>
+        <module>beetl</module>
     </modules>
     <name>com.laiyy Maven Webapp</name>
     <url>http://maven.apache.org</url>
