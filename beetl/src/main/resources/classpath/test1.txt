@@ -1,0 +1,59 @@
+<%
+    var a = 2;
+    var b = 3;
+    var result = a + b;
+%>
+Hello , 2 + 3 = ${result}
+<%
+
+    // 注释只有放在 Beetl 定界符以内才有用
+
+    // 这里是单行注释
+
+    /*
+        这里是多行注释
+    */
+%>
+
+测试循环：
+<%
+    for(number in list) {
+%>
+       Hello , ${number}
+<%
+    }
+%>
+
+测试虚拟属性：集合总共有：${list.~size} 条数据
+
+测试 for-in：
+<%
+    for(number in list){ %>
+        ${numberLP.index} ---- ${number} --- ${numberLP.first} ---- ${numberLP.last} --- ${numberLP.even} --- ${numberLP.odd}
+
+    <%
+    }
+%>
+
+测试 for(exp; exp; exp)：
+<%
+    var arr = [1,2,3];
+    for (var i = 0; i < arr.~size; i++) {
+        print(arr[i]);
+    }
+%>
+
+测试函数调用：
+<%
+    var date = date();
+    var len = strutil.length("aaa");
+    println("len = " + len);
+%>
+
+测试 include：
+<%
+    layout('layout.html', {title:'主题'}){
+    %>
+    Hello, this is main part
+    <%}
+%>
