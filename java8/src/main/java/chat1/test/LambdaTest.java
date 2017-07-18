@@ -12,7 +12,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.function.Function;
 
 /**
  * Created by laiyy
@@ -23,6 +25,51 @@ public class LambdaTest {
     private List<Apple> apples;
 
     private List<Integer> ids;
+
+    @Test
+    public void testSort1(){
+        apples.sort(Comparator.comparing(Apple::getWeight).reversed());
+        apples.forEach(apple -> {
+            System.out.println(apple);
+        });
+    }
+
+    @Test
+    public void testSupplier() {
+        List<Integer> weights = Arrays.asList(7, 3, 4, 10);
+        List<Apple> map = map(weights, Apple::new);
+        System.out.println(map);
+        map.forEach( apple -> {
+            System.out.println(apple);
+        });
+    }
+
+    private static List<Apple> map(List<Integer> list, Function<Integer, Apple> function) {
+        List<Apple> result = new ArrayList<>();
+        for (Integer e : list) {
+            result.add(function.apply(e));
+        }
+        return result;
+    }
+
+    @Test
+    public void testString() {
+        List<String> strs = Arrays.asList("a", "b", "A", "B");
+        strs.sort(String::compareToIgnoreCase);
+        strs.forEach(s -> {
+            System.out.println(s);
+        });
+    }
+
+    @Test
+    public void test() {
+        int port = 1337;
+        Runnable runnable = () -> System.out.println(port);
+
+        apples.sort(Comparator.comparing(Apple::getWeight));
+
+    }
+
 
     @Before
     public void initApple() {
@@ -52,8 +99,8 @@ public class LambdaTest {
     }
 
     @Test
-    public void testProcessFile() throws IOException{
-        String oneLine = processFile( (BufferedReader br) -> br.readLine() + br.readLine());
+    public void testProcessFile() throws IOException {
+        String oneLine = processFile((BufferedReader br) -> br.readLine() + br.readLine());
         System.out.println(oneLine);
     }
 
