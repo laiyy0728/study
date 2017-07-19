@@ -14,6 +14,16 @@ public class Dish {
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "name='" + name + '\'' +
+                ", vegetarian=" + vegetarian +
+                ", calories=" + calories +
+                ", type=" + type +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
