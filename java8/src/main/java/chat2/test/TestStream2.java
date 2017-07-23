@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * Created by laiyy
@@ -17,6 +18,36 @@ import java.util.stream.Collectors;
 public class TestStream2 {
 
     private List<Transaction> transactions;
+
+
+    /**
+     * 创建一个三元流（勾股数）
+     * @throws Exception
+     */
+    @Test
+    public void test9() throws Exception {
+        // 第一种生成方式：求两次平方根
+//        IntStream.rangeClosed(1, 100) // 取出 0 到 100 中的所有数，生成数值流
+//            .boxed() // 转换为对象流
+//            .flatMap( a ->
+//                IntStream.rangeClosed(a, 100) // 取出从 a 到 100 的所有数（为避免取到重复勾股数，开始数不能 0 开始）
+//                    .filter( b -> Math.sqrt( a * a + b * b) % 1 == 0) // 过滤出 a * a + b * b 的开方是整数的数
+//                    .mapToObj( b -> new int[] {a, b, (int)Math.sqrt(a * b + b*b)})// 将取到的 b 放到一个三元数组中
+//            ).forEach( t -> {
+//            System.out.println(t[0] + " ----- " + t[1] + " ----- " + t[2]);
+//        });
+
+        // 第二种生成方式：只求一次平方根
+        IntStream.rangeClosed(1, 100)
+                .boxed()
+                .flatMap( a ->
+                        IntStream.rangeClosed(a, 100)
+                            .mapToObj( b -> new double[]{a, b, Math.sqrt( a * a + b * b)})
+                                .filter(t -> t[2] % 1 == 0)
+                ).forEach( t -> {
+            System.out.println((int)t[0] + " ----- " + (int)t[1] + " ----- " + (int)t[2]);
+        });
+    }
 
     /**
      * 交易额最小的交易
