@@ -1,4 +1,4 @@
-package chat2.entity;
+package stream.entity;
 
 import java.util.Spliterator;
 import java.util.function.Consumer;

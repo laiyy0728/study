@@ -1,8 +1,8 @@
-package chat2.test;
+package stream.test;
 
-import chat2.entity.ForkJoinSumCalculator;
-import chat2.entity.WordCounter;
-import chat2.entity.WordCounterSpliterator;
+import stream.entity.ForkJoinSumCalculator;
+import stream.entity.WordCounter;
+import stream.entity.WordCounterSpliterator;
 import org.junit.Test;
 
 import java.util.concurrent.ForkJoinPool;
