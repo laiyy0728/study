@@ -1,4 +1,4 @@
-package chat1;
+package lambda;
 
 import org.beetl.core.Tag;
 

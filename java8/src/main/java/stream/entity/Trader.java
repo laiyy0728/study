@@ -1,4 +1,4 @@
-package chat2.entity;
+package stream.entity;
 
 /**
  * Created by laiyy

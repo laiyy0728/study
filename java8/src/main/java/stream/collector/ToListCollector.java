@@ -1,4 +1,4 @@
-package chat2.collector;
+package stream.collector;
 
 import java.util.ArrayList;
 import java.util.Collections;

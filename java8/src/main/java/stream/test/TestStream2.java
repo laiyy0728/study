@@ -1,7 +1,7 @@
-package chat2.test;
+package stream.test;
 
-import chat2.entity.Trader;
-import chat2.entity.Transaction;
+import stream.entity.Trader;
+import stream.entity.Transaction;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package chat1.inter;
+package lambda.inter;
 
 /**
  * 自定义 Lambda 接口

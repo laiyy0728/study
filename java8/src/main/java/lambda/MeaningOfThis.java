@@ -1,4 +1,4 @@
-package chat1;
+package lambda;
 
 /**
  * Created by laiyy

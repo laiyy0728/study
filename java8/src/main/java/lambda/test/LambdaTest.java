@@ -1,8 +1,8 @@
-package chat1.test;
+package lambda.test;
 
-import chat1.entity.Apple;
-import chat1.inter.BufferedReaderProcessor;
-import chat1.inter.Predicate;
+import lambda.entity.Apple;
+import lambda.inter.BufferedReaderProcessor;
+import lambda.inter.Predicate;
 import org.junit.Before;
 import org.junit.Test;
 

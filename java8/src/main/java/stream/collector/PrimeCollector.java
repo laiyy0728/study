@@ -1,6 +1,6 @@
-package chat2.collector;
+package stream.collector;
 
-import chat1.inter.Predicate;
+import lambda.inter.Predicate;
 
 import java.util.ArrayList;
 import java.util.Collections;

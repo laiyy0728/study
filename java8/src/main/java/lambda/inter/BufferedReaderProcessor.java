@@ -1,4 +1,4 @@
-package chat1.inter;
+package lambda.inter;
 
 import java.io.BufferedReader;
 import java.io.IOException;

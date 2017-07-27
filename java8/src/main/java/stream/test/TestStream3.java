@@ -1,4 +1,4 @@
-package chat2.test;
+package stream.test;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package chat1.entity;
+package lambda.entity;
 
 /**
  * Created by laiyy

@@ -1,6 +1,6 @@
-package chat2.test;
+package stream.test;
 
-import chat2.entity.Dish;
+import stream.entity.Dish;
 import org.junit.Test;
 
 import java.util.Arrays;
