@@ -1,6 +1,7 @@
 package time;
 
 import org.junit.Test;
+import time.temproal.NextWorkingDay;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -14,6 +15,13 @@ import java.time.temporal.TemporalAdjusters;
  * Date 2017/8/4.
  */
 public class TestTime2 {
+
+    @Test
+    public void testNextWorkingDay() {
+        LocalDate localDate = LocalDate.now();
+        LocalDate with = localDate.with(new NextWorkingDay());
+        System.out.println(with);
+    }
 
     @Test
     public void testTemporalAdjuster(){
