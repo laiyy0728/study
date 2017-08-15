@@ -35,7 +35,6 @@ public class TestTime1 {
         System.out.println(period);
         System.out.println(period1);
         System.out.println(of1);
-
     }
 
     @Test
