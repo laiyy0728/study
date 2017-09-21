@@ -8,7 +8,8 @@
     <modules>
         <module>guava</module>
         <module>java8</module>
-        <module>beetl</module>
+        <module>nio</module>
+        <module>algorithm</module>
     </modules>
     <name>com.laiyy Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -29,8 +30,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <version>4.12</version>
         </dependency>
     </dependencies>
     <build>
