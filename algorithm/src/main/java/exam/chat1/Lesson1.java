@@ -10,6 +10,22 @@ import java.util.Random;
  */
 public class Lesson1 {
 
+    @Test
+    public void test3(){
+        String[][] arr = new String[new Random().nextInt(20)][new Random().nextInt(20)];
+        for (int index = 0; index < arr.length; index++){
+            for (int i = 0; i < arr[index].length; i++){
+                if (new Random().nextBoolean()){
+                    arr[index][i] = "*";
+                } else {
+                    arr[index][i] = " ";
+                }
+                System.out.print(arr[index][i] + "\t");
+            }
+            System.out.println();
+        }
+    }
+
     /**
      * 二维数组置换
      */
@@ -49,7 +65,9 @@ public class Lesson1 {
         int f = 0;
         int g = 1;
         for (int i = 0; i <= 15; i++) {
-            System.out.print(f + " \t");
+            if (f != 0) {
+                System.out.print(f + " \t");
+            }
             f += g;
             g = f - g;
         }
