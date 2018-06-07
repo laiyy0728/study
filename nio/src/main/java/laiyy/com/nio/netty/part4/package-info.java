@@ -18,5 +18,11 @@
  * DelimiterBasedFrameDecoder：分隔符解码器
  * FixedLengthFrameDecoder：定长解码器（消息长度固定、在消息头中标识消息长度）
  *
+ * 总结：
+ * DelimiterBasedFrameDecoder：用于对使用分隔符结尾的消息进行自动解码
+ * FixedBasedFrameDecoder：用于对固定长度的消息进行自动解码
+ *
+ * 使用解码器，可以非常方便的进行数据的自动编解码，不用再考虑粘包、半包问题，极大提升了开发效率
+ *
  */
 package laiyy.com.nio.netty.part4;
