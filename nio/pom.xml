@@ -18,6 +18,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.msgpack</groupId>
+            <artifactId>msgpack</artifactId>
+            <version>0.6.6</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/io.netty/netty -->
         <!--<dependency>-->
             <!--<groupId>io.netty</groupId>-->
