@@ -13,9 +13,13 @@ public enum JobRunnerType {
 
     // 已删除
     DELETED(0, "已删除"),
+    // 已结束
     OVER(1, "已结束"),
+    // 已取消
     CANCEL(2, "已取消"),
+    // 已暂停
     PAUSE(3, "已暂停"),
+    // 运行中
     RUNNING(4, "运行中");
 
     public List<String> names (){
