@@ -1,4 +1,4 @@
-package com.laiyy.kafka.demo2;
+package com.laiyy.kafka.producer.demo2;
 
 /**
  * @author laiyy
@@ -10,6 +10,14 @@ public class Customer {
     private int customerID;
 
     private String customerName;
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerID=" + customerID +
+                ", customerName='" + customerName + '\'' +
+                '}';
+    }
 
     public Customer(int customerID, String customerName) {
         this.customerID = customerID;

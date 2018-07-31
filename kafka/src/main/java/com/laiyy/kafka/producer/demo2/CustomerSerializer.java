@@ -1,4 +1,4 @@
-package com.laiyy.kafka.demo2;
+package com.laiyy.kafka.producer.demo2;
 
 import org.apache.kafka.common.serialization.Serializer;
 
