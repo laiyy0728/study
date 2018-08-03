@@ -9,7 +9,6 @@
         <module>java8</module>
         <module>nio</module>
         <module>algorithm</module>
-        <module>rabbitmq</module>
         <module>netty-in-action</module>
     </modules>
     <name>com.laiyy Maven Webapp</name>
