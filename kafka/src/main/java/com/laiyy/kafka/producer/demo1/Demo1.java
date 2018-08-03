@@ -21,11 +21,13 @@ public class Demo1 {
         kafkaProperties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         kafkaProperties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
+        kafkaProperties.put("group.id", "11");
+
         // 4、创建新的生产者，并为键和值设置了恰当的类型
         KafkaProducer<String, String> producer = new KafkaProducer<>(kafkaProperties);
 
         // 指定目标 topic，发送的键值。键值对象的类型必须与序列化器和生产者对象相匹配
-        ProducerRecord<String, String> record = new ProducerRecord<>("test","list_1", "message");
+        ProducerRecord<String, String> record = new ProducerRecord<>("test2","list_1", "message");
 
         // 发送同步数据
 //        try {
