@@ -10,6 +10,7 @@
         <module>nio</module>
         <module>algorithm</module>
         <module>netty-in-action</module>
+        <module>mq</module>
     </modules>
     <name>com.laiyy Maven Webapp</name>
     <url>http://maven.apache.org</url>
