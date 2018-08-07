@@ -36,16 +36,23 @@ public class TransactionListenerImpl implements TransactionListener {
 
     @Override
     public LocalTransactionState executeLocalTransaction(Message msg, Object arg) {
+        // 设置不同的消息类型（demo，没有任何意义）
         int value = transactionIndex.getAndIncrement();
         int status = value % 3;
         localTrans.put(msg.getTransactionId(), status);
         return LocalTransactionState.UNKNOW;
     }
 
+    /**
+     * 根据不同的状态，设置不同的提交状态
+     * @param msg 消息
+     * @return 消息状态
+     */
     @Override
     public LocalTransactionState checkLocalTransaction(MessageExt msg) {
         Integer status = localTrans.get(msg.getTransactionId());
         if (null != status) {
+            // 根据不同的消息类型，设置不同的消息提交状态
             switch (status) {
                 case 0:
                     return LocalTransactionState.UNKNOW;

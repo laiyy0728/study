@@ -39,7 +39,7 @@ public class TransactionProducer {
             }
         });
 
-        // 设置线程池
+        // 设置线程池（4.3-Release 有问题，如果设置了自定义的线程池，会由于在 start 的时候，初始化不会自动初始化 checkRequestQueue，从而导致在 shutdown 的时候报 NPE)
 //        producer.setExecutorService(threadPool);
         // 设置事务监听器
         producer.setTransactionListener(listener);
