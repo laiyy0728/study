@@ -25,7 +25,7 @@ public class BroadcastConsumer {
         consumer.setNamesrvAddr("192.168.67.129:9876");
 
         // 订阅组
-        consumer.subscribe("TestTopic", "TagF");
+        consumer.subscribe("TestTopic", "*");
 
         // 注册消息监听器
         consumer.registerMessageListener(new MessageListenerConcurrently() {
