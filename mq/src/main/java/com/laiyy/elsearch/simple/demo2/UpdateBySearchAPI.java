@@ -82,6 +82,16 @@ public class UpdateBySearchAPI {
 
         System.err.println(searchResponse1);
 
+        searchResponse = UpdateByQueryAction.INSTANCE.newRequestBuilder(transportClient)
+                .source().setRouting("cat").get();
+
+        System.err.println(searchResponse);
+
+        scrollResponse = UpdateByQueryAction.INSTANCE.newRequestBuilder(transportClient)
+                .setPipeline("hurray").get();
+
+        System.err.println(scrollResponse);
+
     }
 
 }
