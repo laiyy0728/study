@@ -1,0 +1,40 @@
+# 1、datasource
+spring:
+  datasource:
+    password: 123456
+    username: root
+    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false
+
+
+mybatis-plus:
+# mapper 路径
+  mapper-locations: classpath:mapper/*.xml
+  # 数据库实体包
+  type-aliases-package: com.laiyy.mybatisboot.model
+  # 数据库实体内如果包含枚举，需要设置枚举包
+  type-enums-package: com.laiyy.mybatisboot.model.enums
+  # 全局设置
+  global-config:
+    # id 生成方式（0：数据库 ID 自增；1：用户输入，自定义；2：分布式全局唯一 ID；3：UUID）
+    id-type: 0
+    # 字段验证策略（0：忽略，不做验证；1：非空判断，2：非 NULL 判断）
+    field-strategy: 0
+    # 驼峰命名与下划线转换
+    db-column-underline: true
+    # 数据库是否大写命名
+    capital-mode: true
+    # 逻辑删除值（即逻辑删除后的值）
+    logic-delete-value: 0
+    # 逻辑未删除的值（即没有逻辑删除的值）
+    logic-not-delete-value: 1
+    identifier-quote:
+    # 是否动态刷新 mapper 文件
+    refresh-mapper: true
+    sql-injector:
+    # 设置表前缀，如：t_
+    table-prefix:
+  configuration:
+    # 全局设置下划线与驼峰命名的对应关系
+    map-underscore-to-camel-case: true
+    # 全局设置是否开启 MyBatis 缓存
+    cache-enabled: false
