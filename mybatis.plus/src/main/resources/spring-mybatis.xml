@@ -49,13 +49,18 @@
     </bean>
 
     <!-- Spring整合Mybatis，更多查看文档：http://mp.baomidou.com -->
+    <!-- 将 SqlSessionFactory 替换为 MyBatis Plus 的，可以直接使用默认的 Mapper 映射，节省开发时间 -->
     <bean id="sqlSessionFactory" class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <!-- 自动扫描Mapping.xml文件 -->
-        <property name="mapperLocations" value="classpath:mybatis/*/*.xml"/>
-        <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
+        <!-- 如果需要使用自定义的 Mapper.xml 文件，则放开注释，设置 Mapper.xml 地址 -->
+        <!--<property name="mapperLocations" value="classpath:mybatis/*/*.xml"/>-->
+        <!-- 如果需要修改 MyBatis 全局设置，则放开注释，设置全局配置文件地址-->
+        <!--<property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>-->
+        <!-- 设置数据库实体扫描包，并默认使用类名首字母小写作为实体别名 -->
         <property name="typeAliasesPackage" value="com.laiyy.mybatis.plus.model"/>
+        <!-- 如果在数据库实体中存在枚举，则需要设置枚举包 -->
         <property name="typeEnumsPackage" value="com.laiyy.mybatis.plus.enums"/>
+        <!-- 设置 MyBatis 插件 -->
         <property name="plugins">
             <array>
                 <!-- 分页插件配置 -->
@@ -66,6 +71,8 @@
         <!-- 全局配置注入 -->
         <property name="globalConfig" ref="globalConfig" />
     </bean>
+
+    <!-- 设置全局配置 -->
     <bean id="globalConfig" class="com.baomidou.mybatisplus.entity.GlobalConfiguration">
         <!--
             AUTO->`0`("数据库ID自增")
@@ -89,12 +96,13 @@
         <!-- <property name="dbType" value="oracle" /> -->
         <!-- 全局表为下划线命名设置 true -->
         <!-- <property name="dbColumnUnderline" value="true" /> -->
-        <!--<property name="metaObjectHandler">-->
-            <!--<bean class="com.baomidou.springmvc.common.MyMetaObjectHandler" />-->
-        <!--</property>-->
+        <!-- 设置自定义数据填充处理器，可以自动填充数据，如：创建时间、修改时间等 -->
+        <property name="metaObjectHandler">
+            <bean class="com.laiyy.mybatis.plus.common.MyMetaObjectHandler" />
+        </property>
     </bean>
 
-    <!-- MyBatis 动态扫描  -->
+    <!-- MyBatis Mapper 动态扫描。类比 DAO  -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.laiyy.mybatis.plus.mapper"/>
     </bean>
@@ -128,7 +136,7 @@
         </tx:attributes>
     </tx:advice>
 
-    <!-- 配置切面 -->
+    <!-- 配置事务切面 -->
     <aop:config>
         <aop:pointcut id="transactionPointcut" expression="execution(* com.laiyy.mybatis.plus.service..*.*(..))"/>
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice"/>
