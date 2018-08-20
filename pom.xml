@@ -11,6 +11,7 @@
         <module>algorithm</module>
         <module>netty-in-action</module>
         <module>mq</module>
+        <module>mybatis.plus</module>
     </modules>
     <name>com.laiyy Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -27,13 +28,12 @@
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </pluginRepository>
     </pluginRepositories>
-    <dependencies>
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.45</version>
-        </dependency>
+    <properties>
+        <spring.version>4.3.16.RELEASE</spring.version>
+    </properties>
+
+    <dependencies>
 
         <dependency>
             <groupId>org.slf4j</groupId>
