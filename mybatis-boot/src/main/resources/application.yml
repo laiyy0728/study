@@ -1,4 +1,4 @@
-# 1¡¢datasource
+# 1ã€datasource
 spring:
   datasource:
     password: 123456
@@ -7,34 +7,34 @@ spring:
 
 
 mybatis-plus:
-# mapper Â·¾¶
+# mapper è·¯å¾„
   mapper-locations: classpath:mapper/*.xml
-  # Êı¾İ¿âÊµÌå°ü
+  # æ•°æ®åº“å®ä½“åŒ…
   type-aliases-package: com.laiyy.mybatisboot.model
-  # Êı¾İ¿âÊµÌåÄÚÈç¹û°üº¬Ã¶¾Ù£¬ĞèÒªÉèÖÃÃ¶¾Ù°ü
+  # æ•°æ®åº“å®ä½“å†…å¦‚æœåŒ…å«æšä¸¾ï¼Œéœ€è¦è®¾ç½®æšä¸¾åŒ…
   type-enums-package: com.laiyy.mybatisboot.model.enums
-  # È«¾ÖÉèÖÃ
+  # å…¨å±€è®¾ç½®
   global-config:
-    # id Éú³É·½Ê½£¨0£ºÊı¾İ¿â ID ×ÔÔö£»1£ºÓÃ»§ÊäÈë£¬×Ô¶¨Òå£»2£º·Ö²¼Ê½È«¾ÖÎ¨Ò» ID£»3£ºUUID£©
+    # id ç”Ÿæˆæ–¹å¼ï¼ˆ0ï¼šæ•°æ®åº“ ID è‡ªå¢ï¼›1ï¼šç”¨æˆ·è¾“å…¥ï¼Œè‡ªå®šä¹‰ï¼›2ï¼šåˆ†å¸ƒå¼å…¨å±€å”¯ä¸€ IDï¼›3ï¼šUUIDï¼‰
     id-type: 0
-    # ×Ö¶ÎÑéÖ¤²ßÂÔ£¨0£ººöÂÔ£¬²»×öÑéÖ¤£»1£º·Ç¿ÕÅĞ¶Ï£¬2£º·Ç NULL ÅĞ¶Ï£©
+    # å­—æ®µéªŒè¯ç­–ç•¥ï¼ˆ0ï¼šå¿½ç•¥ï¼Œä¸åšéªŒè¯ï¼›1ï¼šéç©ºåˆ¤æ–­ï¼Œ2ï¼šé NULL åˆ¤æ–­ï¼‰
     field-strategy: 0
-    # ÍÕ·åÃüÃûÓëÏÂ»®Ïß×ª»»
+    # é©¼å³°å‘½åä¸ä¸‹åˆ’çº¿è½¬æ¢
     db-column-underline: true
-    # Êı¾İ¿âÊÇ·ñ´óĞ´ÃüÃû
+    # æ•°æ®åº“æ˜¯å¦å¤§å†™å‘½å
     capital-mode: true
-    # Âß¼­É¾³ıÖµ£¨¼´Âß¼­É¾³ıºóµÄÖµ£©
+    # é€»è¾‘åˆ é™¤å€¼ï¼ˆå³é€»è¾‘åˆ é™¤åçš„å€¼ï¼‰
     logic-delete-value: 0
-    # Âß¼­Î´É¾³ıµÄÖµ£¨¼´Ã»ÓĞÂß¼­É¾³ıµÄÖµ£©
+    # é€»è¾‘æœªåˆ é™¤çš„å€¼ï¼ˆå³æ²¡æœ‰é€»è¾‘åˆ é™¤çš„å€¼ï¼‰
     logic-not-delete-value: 1
     identifier-quote:
-    # ÊÇ·ñ¶¯Ì¬Ë¢ĞÂ mapper ÎÄ¼ş
+    # æ˜¯å¦åŠ¨æ€åˆ·æ–° mapper æ–‡ä»¶
     refresh-mapper: true
     sql-injector:
-    # ÉèÖÃ±íÇ°×º£¬Èç£ºt_
+    # è®¾ç½®è¡¨å‰ç¼€ï¼Œå¦‚ï¼št_
     table-prefix:
   configuration:
-    # È«¾ÖÉèÖÃÏÂ»®ÏßÓëÍÕ·åÃüÃûµÄ¶ÔÓ¦¹ØÏµ
+    # å…¨å±€è®¾ç½®ä¸‹åˆ’çº¿ä¸é©¼å³°å‘½åçš„å¯¹åº”å…³ç³»
     map-underscore-to-camel-case: true
-    # È«¾ÖÉèÖÃÊÇ·ñ¿ªÆô MyBatis »º´æ
+    # å…¨å±€è®¾ç½®æ˜¯å¦å¼€å¯ MyBatis ç¼“å­˜
     cache-enabled: false
