@@ -26,5 +26,9 @@ public interface UserMapper extends BaseMapper<User> {
     @Select("select test_id as id, name, age, test_type from user")
     List<User> selectListBySql();
 
+    /**
+     * 自定义条件查询
+     * @param wrapper 实现 MyBatis 自定义条件查询的主接口
+     */
     List<User> selectListByMapper(@Param("ew")Wrapper wrapper);
 }
