@@ -1,0 +1,17 @@
+# redis 配置
+spring:
+  redis:
+    database: 0 # redis 数据库索引，默认为 0
+    host: 192.168.67.129 # redis 服务器地址
+    port: 6379 # redis 端口号
+    password: 123456 # redis 链接密码
+    jedis:
+      pool:
+        max-active: 8 # 最大连接数
+        max-wait: -1ms # 最大阻塞等待时间，-1 为没有限制
+        max-idle: 8 # 最大空闲链接
+        min-idle: 0 # 最小空闲链接
+    timeout: 60ms # 超时时间
+
+
+

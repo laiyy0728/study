@@ -1,5 +1,6 @@
 
-/.idea/
-**/target/
-/out
-/mybatis-boot/.mvn/
+/boot/.mvn/
+/boot/boot.iml
+/boot/mvnw
+/boot/mvnw.cmd
+/boot/src/test/
