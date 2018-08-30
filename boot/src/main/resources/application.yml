@@ -1,17 +1,23 @@
-# redis ÅäÖÃ
+# redis é…ç½®
+#spring:
+#  redis:
+#    database: 0 # redis æ•°æ®åº“ç´¢å¼•ï¼Œé»˜è®¤ä¸º 0
+#    host: 192.168.67.129 # redis æœåŠ¡å™¨åœ°å€
+#    port: 6379 # redis ç«¯å£å·
+#    password: 123456 # redis é“¾æ¥å¯†ç 
+#    jedis:
+#      pool:
+#        max-active: 8 # æœ€å¤§è¿æ¥æ•°
+#        max-wait: -1ms # æœ€å¤§é˜»å¡ç­‰å¾…æ—¶é—´ï¼Œ-1 ä¸ºæ²¡æœ‰é™åˆ¶
+#        max-idle: 8 # æœ€å¤§ç©ºé—²é“¾æ¥
+#        min-idle: 0 # æœ€å°ç©ºé—²é“¾æ¥
+#    timeout: 60ms # è¶…æ—¶æ—¶é—´
+
+# rabbitmq
+
 spring:
-  redis:
-    database: 0 # redis Êı¾İ¿âË÷Òı£¬Ä¬ÈÏÎª 0
-    host: 192.168.67.129 # redis ·şÎñÆ÷µØÖ·
-    port: 6379 # redis ¶Ë¿ÚºÅ
-    password: 123456 # redis Á´½ÓÃÜÂë
-    jedis:
-      pool:
-        max-active: 8 # ×î´óÁ¬½ÓÊı
-        max-wait: -1ms # ×î´ó×èÈûµÈ´ıÊ±¼ä£¬-1 ÎªÃ»ÓĞÏŞÖÆ
-        max-idle: 8 # ×î´ó¿ÕÏĞÁ´½Ó
-        min-idle: 0 # ×îĞ¡¿ÕÏĞÁ´½Ó
-    timeout: 60ms # ³¬Ê±Ê±¼ä
-
-
-
+  rabbitmq:
+    host: 192.168.67.129
+    port: 5672
+    username: guest
+    password: guest

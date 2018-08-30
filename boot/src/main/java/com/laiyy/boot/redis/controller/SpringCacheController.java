@@ -1,7 +1,6 @@
-package com.laiyy.boot.controller;
+package com.laiyy.boot.redis.controller;
 
-import com.laiyy.boot.dto.User;
-import org.springframework.cache.annotation.CachePut;
+import com.laiyy.boot.redis.dto.User;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

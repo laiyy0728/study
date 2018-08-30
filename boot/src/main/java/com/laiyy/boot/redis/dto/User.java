@@ -1,4 +1,4 @@
-package com.laiyy.boot.dto;
+package com.laiyy.boot.redis.dto;
 
 import lombok.Data;
 

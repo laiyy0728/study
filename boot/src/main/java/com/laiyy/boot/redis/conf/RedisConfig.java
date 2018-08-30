@@ -1,4 +1,4 @@
-package com.laiyy.boot.conf;
+package com.laiyy.boot.redis.conf;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -20,7 +20,7 @@ import java.time.Duration;
  * @date 2018/8/29 16:43
  * @description
  */
-@Configuration
+//@Configuration
 public class RedisConfig {
     /**
      * 定义 StringRedisTemplate，之地你那个序列化和反序列化的处理类
@@ -28,7 +28,7 @@ public class RedisConfig {
      * @param factory redis 链接工厂
      * @return redis Template 实例
      */
-    @Bean
+//    @Bean
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
         // 创建 String 类型的 redis 模版
         StringRedisTemplate template = new StringRedisTemplate(factory);
@@ -44,7 +44,7 @@ public class RedisConfig {
         return template;
     }
 
-    @Bean
+//    @Bean
     public CacheManager cacheManager(RedisConnectionFactory factory) {
         RedisCacheConfiguration redisCacheConfiguration = RedisCacheConfiguration.defaultCacheConfig();
         // 设置过期时间为一天
