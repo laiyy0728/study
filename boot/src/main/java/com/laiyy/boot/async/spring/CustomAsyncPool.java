@@ -35,7 +35,7 @@ public class CustomAsyncPool extends WebMvcConfigurationSupport {
      * 配置线程池
      * @return 线程池
      */
-    @Bean
+    @Bean(name = "threadPoolTaskExecutor")
     public ThreadPoolTaskExecutor threadPoolExecutor(){
         ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
         // 初始化 20 个线程
