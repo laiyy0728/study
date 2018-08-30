@@ -1,4 +1,4 @@
-package com.laiyy.boot.async;
+package com.laiyy.boot.async.servlet;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
