@@ -9,7 +9,7 @@ import org.springframework.web.socket.server.standard.ServerEndpointExporter;
  * @date 2018/8/30 15:47
  * @description
  */
-@Configuration
+//@Configuration
 public class WebSocketConfig {
 
     @Bean

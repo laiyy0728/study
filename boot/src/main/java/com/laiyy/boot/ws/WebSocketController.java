@@ -19,8 +19,8 @@ import java.io.IOException;
  *
  * 使用 @ServerEndpoint，指定一个地址，表示定义一个 WebSocket Server 端
  */
-@Component
-@ServerEndpoint(value = "/my-chat/{nick}")
+//@Component
+//@ServerEndpoint(value = "/my-chat/{nick}")
 @Slf4j
 public class WebSocketController {
     @OnOpen
