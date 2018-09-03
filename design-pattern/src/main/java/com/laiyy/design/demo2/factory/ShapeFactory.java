@@ -1,11 +1,13 @@
 package com.laiyy.design.demo2.factory;
-;
+
 import com.laiyy.design.demo2.AbstractFactory;
 import com.laiyy.design.demo2.Color;
 import com.laiyy.design.demo2.Shape;
 import com.laiyy.design.demo2.shape.Circle;
 import com.laiyy.design.demo2.shape.Rectangle;
 import com.laiyy.design.demo2.shape.Square;
+
+;
 
 /**
  * @author laiyy
