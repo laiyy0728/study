@@ -1,0 +1,195 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+    <RECORD>
+        <id>20</id>
+        <createDate>2018/5/10 16:23:09</createDate>
+        <createUserId>34</createUserId>
+        <label>省发展改革委</label>
+        <siteId>4500000001</siteId>
+        <status>0</status>
+        <type>8</type>
+        <username>文佳宁</username>
+        <seq>20</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>21</id>
+        <createDate>2018/5/10 16:24:02</createDate>
+        <createUserId>34</createUserId>
+        <label>省民政厅</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>8</type>
+        <username>文佳宁</username>
+        <seq>22</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>22</id>
+        <createDate>2018/5/10 16:24:21</createDate>
+        <createUserId>34</createUserId>
+        <label>省财政厅</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>8</type>
+        <username>文佳宁</username>
+        <seq>23</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>23</id>
+        <createDate>2018/5/10 16:27:27</createDate>
+        <createUserId>34</createUserId>
+        <label>春运</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>10</type>
+        <username>文佳宁</username>
+        <seq>25</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>24</id>
+        <createDate>2018/5/10 16:27:33</createDate>
+        <createUserId>34</createUserId>
+        <label>踩踏</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>10</type>
+        <username>文佳宁</username>
+        <seq>27</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>25</id>
+        <createDate>2018/5/10 16:27:39</createDate>
+        <createUserId>34</createUserId>
+        <label>漫画</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>10</type>
+        <username>文佳宁</username>
+        <seq>28</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>26</id>
+        <createDate>2018/5/10 16:27:46</createDate>
+        <createUserId>34</createUserId>
+        <label>历史</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>10</type>
+        <username>文佳宁</username>
+        <seq>29</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>27</id>
+        <createDate>2018/5/10 16:27:52</createDate>
+        <createUserId>34</createUserId>
+        <label>风景</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>10</type>
+        <username>文佳宁</username>
+        <seq>30</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>28</id>
+        <createDate>2018/5/10 16:28:03</createDate>
+        <createUserId>34</createUserId>
+        <label>国画</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>10</type>
+        <username>文佳宁</username>
+        <seq>31</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>29</id>
+        <createDate>2018/5/10 16:29:29</createDate>
+        <createUserId>34</createUserId>
+        <label>郑州</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>9</type>
+        <username>文佳宁</username>
+        <seq>24</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>30</id>
+        <createDate>2018/5/10 16:34:47</createDate>
+        <createUserId>34</createUserId>
+        <label>今日视点</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>12</type>
+        <username>文佳宁</username>
+        <seq>26</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>31</id>
+        <createDate>2018/5/11 10:07:43</createDate>
+        <createUserId>34</createUserId>
+        <label>省教育厅</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>8</type>
+        <username>文佳宁</username>
+        <seq>32</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>32</id>
+        <createDate>2018/5/11 11:01:37</createDate>
+        <createUserId>34</createUserId>
+        <label>省公安厅</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>8</type>
+        <username>文佳宁</username>
+        <seq>21</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>33</id>
+        <createDate>2018/6/9 15:55:28</createDate>
+        <createUserId>24</createUserId>
+        <label>111</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>8</type>
+        <username>王浩</username>
+        <seq>33</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>34</id>
+        <createDate>2018/6/9 15:55:44</createDate>
+        <createUserId>24</createUserId>
+        <label>222</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>8</type>
+        <username>王浩</username>
+        <seq>34</seq>
+        <userId>0</userId>
+    </RECORD>
+    <RECORD>
+        <id>35</id>
+        <createDate>2018/8/15 16:09:41</createDate>
+        <createUserId>55</createUserId>
+        <label>123123</label>
+        <siteId>4500000001</siteId>
+        <status>1</status>
+        <type>13</type>
+        <username>冯源</username>
+        <seq>35</seq>
+        <userId>0</userId>
+    </RECORD>
+</RECORDS>

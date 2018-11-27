@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///springbatch?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong
+    username: root
+    password: 123456
+    schema: classpath:/org/springframework/batch/core/schema-mysql.sql
+  batch:
+    initialize-schema: always
+    job:
+      enabled: false
+#    job:
+#      names: parentJob

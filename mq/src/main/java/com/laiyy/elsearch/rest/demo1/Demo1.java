@@ -85,7 +85,7 @@ public class Demo1 {
 
 
 
-//        restClient.close();
+        restClient.close();
 
     }
 
