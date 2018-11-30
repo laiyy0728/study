@@ -7,3 +7,7 @@
 /.idea/
 
 /*/target
+/cloud_java/mvnw.cmd
+/cloud_java/mvnw
+/cloud_java/cloud_java.iml
+/cloud_java/src/test/
