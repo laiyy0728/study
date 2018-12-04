@@ -11,3 +11,7 @@
 /cloud_java/mvnw
 /cloud_java/cloud_java.iml
 /cloud_java/src/test/
+/jetcache/.mvn/
+/jetcache/.gitignore
+/jetcache/mvnw.cmd
+/jetcache/mvnw
