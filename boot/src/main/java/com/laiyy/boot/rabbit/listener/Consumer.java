@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
  * @date 2018/8/30 14:02
  * @description
  */
-@Component
-@RabbitListener(queues = "test_mq")
+//@Component
+//@RabbitListener(queues = "test_mq")
 @Slf4j
 public class Consumer {
 

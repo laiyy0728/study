@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2018/8/30 13:59
  * @description
  */
-@Configuration
+//@Configuration
 public class RabbitConfig {
 
     /**

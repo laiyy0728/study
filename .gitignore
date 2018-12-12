@@ -15,3 +15,6 @@
 /jetcache/.gitignore
 /jetcache/mvnw.cmd
 /jetcache/mvnw
+/activiti/.mvn/
+/activiti/mvnw
+/activiti/mvnw.cmd

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2018/8/30 14:08
  * @description
  */
-@RestController
+//@RestController
 public class RabbitController {
     /**
      * 注入队列模版

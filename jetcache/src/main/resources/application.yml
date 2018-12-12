@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    password: 817j0JK_x8
+    url: jdbc:mysql://10.10.10.249:3306/t1?useUnicode=true&characterEncoding=utf-8
+    username: t1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+# jetCache 配置
+jetcache:
+    # 统计间隔
+    statIntervalMinutes: 15
+    # 默认为 true。是否将 areaName 作为 key 的前缀。 areaName： remote、local 后的第一级子节点，在本例中为： local 和 remote 下的 default
+    areaInCacheName: false
+    local:
+        default:
+            # 在 remote 中为：redis、tair 等，在 local 中为 linkedhashmap、caffeine
+            type: linkedhashmap
+            # key 转换器的全局配置，当前只有一个 fastjson；当 使用 @CreateCache 且缓存类型为 local 时，可以指定为 none。通过 equals 识别 key。在进行方法缓存时，必须指定 keyConvertor
+            keyConvertor: fastjson
+            # 每个缓存实例的最大元素个数，仅 local 类型的缓存需要指定。这里指的的每个缓存实例的限制。如：用@CreateCache 创建了2个缓存实例（并且注解上没有设置localLimit），那么每个缓存实例限制都是 100 个）
+#            limit: 100
+            # 以毫秒为单位，指定多长时间没有访问，就让缓存失效，当前只有本地缓存支持。
+#            expireAfterWriteInMillis:
+            # 以毫秒为单位指定超时时间的全局配置，默认无穷大
+#            expireAfterWriteInMillis:
+    remote:
+        default:
+            type: redis
+            keyConvertor: fastjson
+            # 全局配置，仅支持 remote。可选值：java、kryo
+            valueEncoder: java
+            # 全局配置，仅支持 remote。可选值：java、kryo
+            valueDecoder: java
+
+            poolConfig:
+                minIdle: 5
+                maxIdle: 20
+                maxTotal: 50
+            host: 127.0.0.1
+            port: 6379
+
