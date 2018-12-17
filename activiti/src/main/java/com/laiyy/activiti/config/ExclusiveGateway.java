@@ -16,7 +16,7 @@ public class ExclusiveGateway extends BaseConfig{
     public void init(){
 //        deploy("exclusiveGateway.bpmn", "排他网关", "排他网关");
 
-        startProcess("bankBill");
+//        startProcess("bankBill");
 
     }
 

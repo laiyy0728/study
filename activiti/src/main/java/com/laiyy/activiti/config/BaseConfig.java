@@ -9,6 +9,9 @@ import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.util.CollectionUtils;
+
+import java.util.Map;
 
 /**
  * @author laiyy
@@ -42,10 +45,15 @@ public class BaseConfig {
     }
 
 
-    protected void startProcess(String processDefikey){
-
-        ProcessInstance processInstance = processEngine.getRuntimeService()
-                .startProcessInstanceByKey(processDefikey);
+    protected void startProcess(String processDefikey, Map<String, Object> params) {
+        ProcessInstance processInstance;
+        if (CollectionUtils.isEmpty(params)) {
+            processInstance = processEngine.getRuntimeService()
+                    .startProcessInstanceByKey(processDefikey);
+        } else {
+            processInstance = processEngine.getRuntimeService()
+                    .startProcessInstanceByKey(processDefikey, params);
+        }
 
         System.out.println("流程执行对象的id：" + processInstance.getId());
         System.out.println("流程实例的id：" + processInstance.getProcessInstanceId());
@@ -68,7 +76,7 @@ public class BaseConfig {
         System.out.println("部署成功后返回的 id：" + deploy.getId() + "，部署的名称：" + deploy.getName());
     }
 
-    protected void completeTask(String taskId){
+    protected void completeTask(String taskId) {
         // 完成任务，也需要任务服务
         TaskService taskService = processEngine.getTaskService();
         // 完成任务
